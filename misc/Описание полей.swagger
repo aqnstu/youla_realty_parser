@@ -1,0 +1,136 @@
+YoulaAd:
+type: "object"
+properties:
+  id:
+	type: "string"
+	description: "id объявления (MD5-хэш от URL)"
+  forumId:
+	type: "integer"
+	description: "id источника"
+	example: "ЮЛА - 284"
+  name:
+	type: "string"
+	description: "Имя объявления"
+  text:
+	type: "string"
+	description: "ИТекст объявления"
+  cost:
+	type: "integer"
+	description: "Цена в рублях"
+  url:
+	type: "string"
+	description: "URL-адрес объявления"
+  fullAddress:
+	type: "string"
+	description: "Полный адресс объекта"
+  latitude:
+	type: "number"
+	description: "Широта"
+  longitude:
+	type: "number"
+	description: "Долгота"
+  images:
+	type: "string"
+	description: "Ссылки на изображения (URL через ;)"
+  typeCode:
+	type: "integer"
+	description: "Тип недвижимости (1 - квартира, 2 - комната, 3 - загородная, 4 - коммерческая, 5 - гараж или машиноместо)"
+  taskCode:
+	type: "integer"
+	description: "Тип сделки (1 - продажа, 2 - аренда, 3 - в резерве)"
+  balcony:
+	type: "boolean"
+	description: "Наличие балкона"
+  loggia:
+	type: "boolean"
+	description: "Наличие лоджии"
+  roomQuantity:
+	type: "integer"
+	description: "Количество комнат"
+  passLift:
+	type: "boolean"
+	description: "Наличие пассажирского лифта"
+  cargoLift:
+	type: "boolean"
+	description: "Наличие грузового лифта"
+  floor:
+	type: "integer"
+	description: "Этаж объекта"
+  floors:
+	type: "integer"
+	description: "Количество этажей"
+  buildYear:
+	type: "integer"
+	description: "Год постройки"
+  totalArea:
+	type: "number"
+	description: "Общая площадь (в кв.м.)"
+  kitchenArea:
+	type: "number"
+	description: "Площадь кухни (в кв.м.)"
+  livingarea:
+	type: "number"
+	description: "Жилая площадь (в кв.м.)"
+  landArea:
+	type: "number"
+	description: "Площадь участка (в сотках)"
+  repair:
+	type: "integer"
+	description: "Ремонт (1 - не требуется, 2 - требуется ремонт, 3 - косметический, 4 - евроремонт, 5 - дизайнерский, 6 - капитальный ремонт)"
+  bathroomType:
+	type: "integer"
+	description: "Тип санузла (1 - совмещенный, 2 - раздельный, 3 - 2 и более, 4 - на улице, 5 - в доме)"
+  isOwner:
+	type: "boolean"
+	description: "Является ли собственником"
+  wallMaterial:
+	type: "integer"
+	description: "Материал стен дома (1 - панельный, 2 - кирпичный, 3 - монолитный, 4 - кирпично-монолитный, 5 - блочный, 6 - деревянный, 7 - щитовой)"
+  tenure:
+	type: "integer"
+	description: "Срок владения (1 - до 3-х лет, 2 - от 3 до 5 лет, 3 - более 5 лет)"
+  housing:
+	type: "integer"
+	description: "Тип квартиры (1 - вторичка, 2 - Новостройка)"
+  fridge:
+	type: "boolean"
+	description: "Наличие холодильника"
+  dishWasher:
+	type: "boolean"
+	description: "Наличие посудомоечной машины"
+  washer:
+	type: "boolean"
+	description: "Наличие стиральной машины"
+  commissionType:
+	type: "integer"
+	description: "Тип комиссии (1 - нет, 2 - 30%, 3 - 50%, 4 - 100%, 5 - другая)"
+  utilitiesInclude:
+	type: "boolean"
+	description: "Включены ли коммунальные услуги"
+  prepayType:
+	type: "integer"
+	description: "Тип предоплаты (1 - без предоплаты, 2 - 1 месяц, 3 - 2 месяца, 4 - 3 месяца, 5 - 4 и более месяцев)"
+  electricity:
+	type: "boolean"
+	description: "Наличие электричества"
+  gas:
+	type: "boolean"
+	description: "Наличие газа"
+  heating:
+	type: "boolean"
+	description: "Наличие отопления"
+  waterSupply:
+	type: "boolean"
+	description: "Наличие водоснабжения"
+  garage:
+	type: "boolean"
+	description: "Наличие гаража"
+  bedrooms:
+	type: "integer"
+	description: "Количество спален"
+  buildingType:
+	type: "integer"
+	description: "Тип строения (1 - дом, 2 - таунхаус, 3 - коттедж, 4 - дача, 5 - Помещение свободного назначения, 6 - торговое помещение, 7 - офисное помещение, 8 - производство, 9 - склад, 10 - другая коммерческая недвижимость)"
+  plotType:
+	type: "integer"
+	description: "Тип участка (1 - cельхоз (СНТ или ДНП), 2 - фермерское хоз-во, 3 - поселения (ИЖС), 4 - земля промназначения, 5 - инвестпроект)"
